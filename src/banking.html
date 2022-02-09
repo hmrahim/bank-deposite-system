@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-lime-100">
+    <main>
+        <section class="w-3/4 mx-auto my-8 ">
+            <h1 class="text-3xl font-semibold text-center capitalize text-rose-600 my-4">Baper Bank limiteds Deposite and Withdra System</h1>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-rose-400 p-8 rounded shadow-2xl">
+                    <h2 class="text-2xl text-white">Deposite</h2>
+                    <h1 class="text-4xl text-white font-semibold">$<span id="deposite-balance">200</span></h1>
+                </div>
+                <div class="bg-purple-500 p-8 rounded shadow-2xl">
+                    <h2 class="text-2xl text-white">Withdra</h2>
+                    <h1 class="text-4xl text-white font-semibold">$<span>200</span></h1>
+                </div>
+                <div class="bg-blue-500 p-8 rounded shadow-2xl">
+                    <h2 class="text-2xl text-white">Total Balance</h2>
+                    <h1 class="text-4xl text-white font-semibold">$<span>200</span></h1>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 mt-10">
+                <div class="bg-blue-300 p-4  rounded shadow-2xl">
+                    <h1 class="text-white text-2xl font-semibold mx-6">Please Deposite</h1>
+                    <input id="deposite-input" type="text" class="p-1 w-3/4  mx-6 my-3 rounded block focus:outline-white " placeholder="Deposite Amount">
+                    <button id="deposite-btn" class="py-1 px-5 mx-6 text-xl bg-blue-600 text-white rounded font-semibold">Deposite</button>
+                </div>
+                <div class="bg-blue-300 p-4  rounded shadow-2xl">
+                    <h1 class="text-white text-2xl font-semibold mx-6">Please Withdra</h1>
+                    <input id="withdra-input" type="text" class="p-1 w-3/4  mx-6 my-3 rounded block focus:outline-white " placeholder="Withdra Amount">
+                    <button id="withdra-btn" class="py-1 px-5 mx-6 text-xl bg-blue-600 text-white rounded font-semibold">Withdra</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="./deposite.js"></script>
+</body>
+</html>
