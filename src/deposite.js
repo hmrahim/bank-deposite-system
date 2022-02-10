@@ -14,3 +14,23 @@ document.getElementById("deposite-btn").addEventListener("click", function () {
         alert("please provie a valid number")
     }
 })
+
+
+// withdra system ...
+
+document.getElementById("withdra-btn").addEventListener("click",function(){
+    const withdraInput = document.getElementById("withdra-input")
+    const withdraBalance = document.getElementById("withdra-balance")
+    const totalBalance = document.getElementById("total-balance")
+
+    if (withdraInput.value != "") {
+        const totalWithdra = parseFloat(withdraBalance.innerText) + parseFloat(withdraInput.value)
+
+        withdraBalance.innerText = totalWithdra
+        totalBalance.innerText = parseFloat(totalBalance.innerText) - parseFloat(withdraInput.value)
+        withdraInput.value = ""
+    } else {
+        alert("please provide a valid number")
+    }
+    
+})
